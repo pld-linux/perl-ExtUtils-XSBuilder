@@ -10,12 +10,12 @@
 Summary:	ExtUtils::XSBuilder - automatic XS glue code generation
 Summary(pl):	ExtUtils::XSBuilder - automatyczne generowanie kodu ³±cz±cego XS
 Name:		perl-ExtUtils-XSBuilder
-Version:	0.25
+Version:	0.27
 Release:	1
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	99e8b4461accff143a9012da5cf2274a
+# Source0-md5:	6e1f1c8207b598166dc7a06d633db308
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-Tie-IxHash
