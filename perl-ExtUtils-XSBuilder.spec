@@ -7,7 +7,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	ExtUtils
 %define	pnam	XSBuilder
-Summary:	ExtUtils::XSBuilder - Automatic XS glue code generation
+Summary:	ExtUtils::XSBuilder - automatic XS glue code generation
 Summary(pl):	ExtUtils::XSBuilder - automatyczne generowanie kodu ³±cz±cego XS
 Name:		perl-ExtUtils-XSBuilder
 Version:	0.25
