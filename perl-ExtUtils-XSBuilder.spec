@@ -8,7 +8,7 @@
 %define		pdir	ExtUtils
 %define		pnam	XSBuilder
 Summary:	ExtUtils::XSBuilder - automatic XS glue code generation
-Summary(pl):	ExtUtils::XSBuilder - automatyczne generowanie kodu ³±cz±cego XS
+Summary(pl.UTF-8):   ExtUtils::XSBuilder - automatyczne generowanie kodu Å‚Ä…czÄ…cego XS
 Name:		perl-ExtUtils-XSBuilder
 Version:	0.27
 Release:	1
@@ -32,15 +32,15 @@ but it removes a lot of stupid work and copy&paste from you. Also when
 the C API changes, most of the time you only have to rerun XSBuilder
 to get your new Perl API.
 
-%description -l pl
-ExtUtils::XSBuilder to zbiór modu³ów do analizy plików nag³ówkowych C
-i tworzenia z nich kodu ³±cz±cego XS oraz dokumentacji. W idealnej
+%description -l pl.UTF-8
+ExtUtils::XSBuilder to zbiÃ³r moduÅ‚Ã³w do analizy plikÃ³w nagÅ‚Ã³wkowych C
+i tworzenia z nich kodu Å‚Ä…czÄ…cego XS oraz dokumentacji. W idealnej
 sytuacji pozwala to na "napisanie" interfejsu do biblioteki C bez
-kodowania ani jednej linii. Ale jako ¿e ¿adne API w C nie jest
-idealne, w wiêkszo¶ci przypadków potrzebne s± pewne poprawki - tak
-wiêc aby u¿ywaæ tego modu³u nadal trzeba znaæ siê na programowaniu w C
-oraz XS, ale zapobiega on du¿ej ilo¶ci g³upiej pracy i copy-paste.
-Tak¿e kiedy API w C siê zmienia, wiêkszo¶æ roboty to ponowne
+kodowania ani jednej linii. Ale jako Å¼e Å¼adne API w C nie jest
+idealne, w wiÄ™kszoÅ›ci przypadkÃ³w potrzebne sÄ… pewne poprawki - tak
+wiÄ™c aby uÅ¼ywaÄ‡ tego moduÅ‚u nadal trzeba znaÄ‡ siÄ™ na programowaniu w C
+oraz XS, ale zapobiega on duÅ¼ej iloÅ›ci gÅ‚upiej pracy i copy-paste.
+TakÅ¼e kiedy API w C siÄ™ zmienia, wiÄ™kszoÅ›Ä‡ roboty to ponowne
 uruchomienie XSBuildera dla uzyskania nowego perlowego API.
 
 %prep
