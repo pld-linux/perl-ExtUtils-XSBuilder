@@ -8,7 +8,7 @@
 %define		pdir	ExtUtils
 %define		pnam	XSBuilder
 Summary:	ExtUtils::XSBuilder - automatic XS glue code generation
-Summary(pl.UTF-8):   ExtUtils::XSBuilder - automatyczne generowanie kodu łączącego XS
+Summary(pl.UTF-8):	ExtUtils::XSBuilder - automatyczne generowanie kodu łączącego XS
 Name:		perl-ExtUtils-XSBuilder
 Version:	0.27
 Release:	1
