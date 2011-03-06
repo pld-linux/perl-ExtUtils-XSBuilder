@@ -1,8 +1,6 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-			# there are no tests defined currently, so
-			# don't bother
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	ExtUtils
@@ -14,10 +12,14 @@ Version:	0.28
 Release:	1
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/ExtUtils/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	1d33ddeacc01426a02e23c71c2e4cd04
+URL:		http://search.cpan.org/dist/ExtUtils-XSBuilder/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl-Tie-IxHash
+%endif
 Requires:	perl-Tie-IxHash
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -60,6 +62,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/ExtUtils/*.pod
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -68,4 +72,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_vendorlib}/ExtUtils/XSBuilder.pm
 %{perl_vendorlib}/ExtUtils/XSBuilder
-%{_mandir}/man3/*
+%{_mandir}/man3/ExtUtils::XSBuilder*.3pm*
+%{_mandir}/man3/ExtUtils::xsbuilder.osc2002.3pm*
